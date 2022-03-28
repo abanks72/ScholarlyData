@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <ul>
+        {% for professor in professors %}
+            <li>{{ professor.name }}</li>
+            <li>{{ professor.hindex }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
